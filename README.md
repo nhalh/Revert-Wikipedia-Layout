@@ -1,4 +1,4 @@
-# Revert-Wikipedia-Layout
+# Revert Wikipedia Layout
 
 This extension will allow you to use the old Wikipedia layout without the need to create an account.
 
