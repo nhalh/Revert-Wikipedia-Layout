@@ -1,7 +1,7 @@
 {
   "name": "Revert Wikipedia Layout",
   "description": "This extension will allow you to use the old Wikipedia layout without the need to create an account.",
-  "version": "1.1",
+  "version": "1.2",
   "manifest_version": 3,
   "content_scripts": [
     {
@@ -9,7 +9,8 @@
         "Scripts/Main.js"
       ],
       "matches": [
-        "*://*.wikipedia.org/*"
+        "<all_urls>"
+        // "*://*.wikipedia.org/*"
       ]
     }
   ],
