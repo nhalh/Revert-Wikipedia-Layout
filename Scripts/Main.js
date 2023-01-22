@@ -1,5 +1,14 @@
 document.querySelectorAll("a").forEach(link =>
 {
+    setLayout(link);
+});
+
+location.href.includes("useskin=vector") ? null : setLayout(location);
+
+
+function setLayout(link)
+{
+
     if (link.href.includes("wikipedia.org/"))
     {
         if (link.href.includes("useskin=vector"))
@@ -27,4 +36,4 @@ document.querySelectorAll("a").forEach(link =>
     {
         link.href = link.href;
     }
-});
+}
