@@ -9,7 +9,7 @@
         "Scripts/Main.js"
       ],
       "matches": [
-        "<all_urls>"
+        "*.wikipedia.org/*"
       ]
     }
   ],
