@@ -1,5 +1,8 @@
 ### Changelog
 
+1.6
+- Fixed asking for access to all websites
+
 1.5
 - Fixed an issue that prevented the search page and articles accessed from the search page to not revert the layout
 
