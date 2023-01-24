@@ -13,7 +13,7 @@ function setLayout(link)
     {
         if (link.href.includes("useskin=vector"))
         {
-            link.href = link.href;
+            return;
         }
         else
         {
@@ -24,7 +24,7 @@ function setLayout(link)
             else if (link.href.includes("#"))
             {
                 let splitURL = link.href.split('#', 2);
-                link.href = splitURL[0] + '?useskin=vector' + splitURL[1];
+                link.href = splitURL[0] + '?useskin=vector' + '#' + splitURL[1];
             }
             else
             {
@@ -34,6 +34,6 @@ function setLayout(link)
     }
     else
     {
-        link.href = link.href;
+        return;
     }
 }
