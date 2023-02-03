@@ -1,4 +1,9 @@
 ### Changelog
+1.7
+- Found a workaround to allow the extension to work properly when accessing articles from outside of Wikipedia while limiting permissions
+- Improved loading speed of search results with the layout applied
+- Fixed hyperlink previews when hovered
+- Removed "?useskin=vector" from hyperlinks
 
 1.6
 - Fixed a bug that caused some website apps to refresh or prevented them from loading
