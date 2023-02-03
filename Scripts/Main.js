@@ -1,39 +1,10 @@
-document.querySelectorAll("a").forEach(link =>
+// Check if the useskin parameter is set to vector
+var url = new URL(location.href);
+var useskin = url.searchParams.get("useskin");
+
+if (useskin !== "vector")
 {
-    setLayout(link);
-});
-
-location.href.includes("wikipedia.org/") ? (location.href.includes("useskin=vector") ? null : setLayout(location)) : null;
-
-
-function setLayout(link)
-{
-
-    if (link.href.includes("wikipedia.org/"))
-    {
-        if (link.href.includes("useskin=vector"))
-        {
-            return;
-        }
-        else
-        {
-            if (link.href.includes("?"))
-            {
-                link.href = link.href + "&" + 'useskin=vector';
-            }
-            else if (link.href.includes("#"))
-            {
-                let splitURL = link.href.split('#', 2);
-                link.href = splitURL[0] + '?useskin=vector' + '#' + splitURL[1];
-            }
-            else
-            {
-                link.href = link.href + "?" + 'useskin=vector';
-            }
-        }
-    }
-    else
-    {
-        return;
-    }
+    // Apply the 2010 vector skin
+    url.searchParams.set("useskin", "vector");
+    location.href = url;
 }
