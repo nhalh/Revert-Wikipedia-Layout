@@ -1,4 +1,7 @@
 ### Changelog
+1.8
+- Improved loading speeds
+
 1.7
 - Found a workaround to allow the extension to work properly when accessing articles from outside of Wikipedia while limiting permissions
 - Improved loading speed of search results with the layout applied
