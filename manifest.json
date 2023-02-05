@@ -1,18 +1,13 @@
 {
   "name": "Revert Wikipedia Layout",
   "description": "This extension will allow you to use the old Wikipedia layout without the need to create an account.",
-  "version": "1.7",
+  "version": "1.8",
   "manifest_version": 3,
-  "content_scripts": [
-    {
-      "js": [
-        "Scripts/Main.js"
-      ],
-      "run_at": "document_start",
-      "matches": [
-        "*://*.wikipedia.org/*"
-      ]
-    }
+  "background": {
+    "service_worker": "Scripts/Main.js"
+  },
+  "permissions": [
+    "webNavigation"
   ],
   "icons": {
     "16": "Images/icon-16.png",
@@ -21,3 +16,4 @@
     "128": "Images/icon-128.png"
   }
 }
+// Implement redirect injection
