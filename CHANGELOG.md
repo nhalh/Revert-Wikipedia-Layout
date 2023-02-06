@@ -1,4 +1,7 @@
 ### Changelog
+1.8.1
+- Reverting back to version 1.7 updates due to Wikipedia Search results not applying
+
 1.8
 - Improved loading speeds
 
